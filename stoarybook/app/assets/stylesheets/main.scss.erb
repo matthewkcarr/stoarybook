@@ -1,0 +1,66 @@
+
+html {
+  background-color: white;
+  color: black;
+  a {
+    text-decoration: none;
+    color: #563a1e; //dark brown
+  }
+  a:hover {
+    color: #995b3e;//light brown
+  }
+  a:visited {
+    color: black;
+  }
+}
+
+body {
+  width: 1000px;
+  outline: 1px solid black;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 45pt;
+  font-weight: 500;
+  font-family: Courier;
+  color: black;
+}
+#navigation {
+  ul {
+    width: 700px;
+  }
+  ul li {
+    display: inline;
+    margin-left: 30px;
+    font-size: 14pt;
+    font-family: Sans;
+    font-weight: bold;
+    color: black;
+  }
+}
+.logo {
+  width: 400px;
+  height: 80px;
+}
+
+#nav_sep {
+  width: 90%;
+  margin: 0 auto;
+
+  .bez_line {
+    border-bottom: 2px solid black;
+    width: 300px;
+    float: left;
+    height: 20px;
+  }
+  .bezier {
+    width: 300px;
+    height: 80px;
+    background-image: url( ' <%= image_path("theme/nav_bezier.png") %>');
+    float: left;
+  }
+}
+
+.clear {
+  clear: both;
+}
