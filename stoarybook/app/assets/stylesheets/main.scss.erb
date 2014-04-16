@@ -15,9 +15,8 @@ html {
 }
 
 body {
-  width: 1000px;
+  width: 100%;
   outline: 1px solid black;
-  margin: 0 auto;
 }
 h1 {
   font-size: 45pt;
@@ -25,39 +24,49 @@ h1 {
   font-family: Courier;
   color: black;
 }
+#body_content {
+  margin: 0 auto;
+	width: 96%;
+}
 #navigation {
+	float: right;
+	width: 55%;
+	outline: 1px solid blue;
   ul {
-    width: 700px;
   }
   ul li {
-    display: inline;
-    margin-left: 30px;
-    font-size: 14pt;
-    font-family: Sans;
-    font-weight: bold;
+    display: inline-block;
+    font-size: 1em;
     color: black;
   }
 }
-.logo {
-  width: 400px;
-  height: 80px;
+#top_logo {
+	float: left;
+  width: 45%;
+	outline: 1px solid red;
+	img {
+		max-width: 100%;
+	}
 }
 
 #nav_sep {
   width: 90%;
   margin: 0 auto;
+	//min-height: 30px;
 
   .bez_line {
+		margin-top: 49%;
     border-bottom: 2px solid black;
-    width: 300px;
+    width: 35%;
     float: left;
-    height: 20px;
   }
   .bezier {
-    width: 300px;
-    height: 80px;
-    background-image: url( ' <%= image_path("theme/nav_bezier.png") %>');
+    width: 30%;
     float: left;
+		img {
+			max-width: 100%;
+			//background-image: url( ' <%= image_path("theme/nav_bezier.png") %>');
+		}
   }
 }
 

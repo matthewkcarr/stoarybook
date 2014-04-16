@@ -8,52 +8,57 @@
 </head>
 <body>
 
+<div id="body_content">
 
-<div class="logo">
-  <a href="/">
-    <img src="<%= image_path('theme/stoarybook_logo.png') %>" />
-  </a> 
-</div>
+	<div id="top_logo">
+		<a href="/">
+			<img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+		</a> 
+	</div>
 
-<div id="navigation">
-  <ul>
-    <li>
-      <%= link_to 'Sign In', '/users/sign_in' %>
-    </li>
-    <li>
-      <%= link_to 'Sign Out', '/users/sign_out', :method => 'delete' %>
-    </li>
-    <li>
-      <%= link_to 'Manage a Book', '/' %>
-    </li>
-    <li>
-      <%= link_to 'Browse Books', '/' %>
-    </li>
-    <li>
-      <%= link_to 'Upload a Photo', '/' %>
-    </li>
-    <li>
-      <%= link_to 'Browse Photos', '/' %>
-    </li>
-  </ul>
-</div>
+	<div id="navigation">
+		<ul>
+			<li>
+				<%= link_to 'Sign In', '/users/sign_in' %>
+			</li>
+			<li>
+				<%= link_to 'Sign Out', '/users/sign_out', :method => 'delete' %>
+			</li>
+			<li>
+				<%= link_to 'Manage a Book', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Browse Books', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Upload a Photo', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Browse Photos', '/' %>
+			</li>
+		</ul>
+	</div>
 
-<div id="nav_sep">
-  <div class="bez_line">
-  </div>
-  <div class="bezier">
-  </div>
-  <div class="bez_line">
-  </div>
-  <div class="clear">
-  </div>
-</div>
+	<div class="clear">
+	</div>
 
-<div id="page_content">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= yield %>
-</div>
+	<div id="nav_sep">
+		<div class="bez_line">
+		</div>
+		<div class="bezier">
+			<img src="<%= image_path('theme/nav_bezier.png') %>" />
+		</div>
+		<div class="bez_line">
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+
+	<div id="page_content">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+		<%= yield %>
+	</div>
 
 </body>
 </html>
