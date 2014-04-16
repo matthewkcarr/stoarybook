@@ -1,2 +1,0 @@
-rvm rvmrc warning ignore /usr/local/src/projects/storybook/stoarybook/.rvmrc --create
-rvm use 2.1.1@stoarybook
