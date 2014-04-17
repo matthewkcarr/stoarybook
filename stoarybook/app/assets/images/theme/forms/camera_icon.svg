@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2187" viewBox="0 0 50 50" version="1.0">
+  <g id="layer1">
+    <path id="path3201" d="m46.376 25c0 10.905-9.5701 19.746-21.376 19.746-11.805 0-21.376-8.841-21.376-19.746s9.5701-19.746 21.376-19.746c11.805 0 21.376 8.8406 21.376 19.746z" stroke="#000" stroke-width="2.25" fill="none"/>
+    <path id="rect3071" d="m21.562 16.028-2.8509 3.6894c1.5859-1.5859 3.794-2.5155 6.205-2.5155 2.4109 0 4.6237 0.92959 6.205 2.5155l-2.8509-3.6894h-6.708zm9.559 3.6894c1.5813 1.5859 2.5155 3.794 2.5155 6.205 0 3.6164-2.0636 6.7228-5.1988 8.0497h10.062v-13.584h-6.708l-0.67081-0.67081zm-6.205-1.509c-4.2372 0-7.5466 3.4771-7.5466 7.7143s3.3094 7.5466 7.5466 7.5466 7.7143-3.3094 7.7143-7.5466-3.4771-7.7143-7.7143-7.7143zm0 2.0124c3.1238 0 5.7019 2.578 5.7019 5.7019 0 3.1238-2.578 5.5342-5.7019 5.5342-3.1238 0-5.7019-2.4103-5.7019-5.5342 0-3.1238 2.578-5.7019 5.7019-5.7019zm-13.416 0.1677v13.584h10.062c-3.1403-1.3269-5.3665-4.4333-5.3665-8.0497 0-2.1096 0.76177-4.0198 2.0124-5.5342h-6.708z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Camera icon</dc:title>
+        <dc:date>2013-10-16T19:36:14</dc:date>
+        <dc:description/>
+        <dc:source>http://openclipart.org/detail/185046/camera-icon-by-ousia-185046</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>ousia</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>camera</rdf:li>
+            <rdf:li>icon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
