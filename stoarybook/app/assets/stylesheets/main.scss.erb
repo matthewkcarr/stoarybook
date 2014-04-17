@@ -24,6 +24,9 @@ h1 {
   font-family: Courier;
   color: black;
 }
+img {
+  max-width: 100%;
+}
 #body_content {
   margin: 0 auto;
 	width: 90%;
@@ -73,8 +76,10 @@ h1 {
   }
 }
 
+
 .book_picture_cont {
-  width: 50%;
+  float: left;
+  width: 45%;
 
   .book_picture_frame {
     img {
@@ -82,16 +87,50 @@ h1 {
     }
   }
   .book_picture_image {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 50%;
+    max-height: 50%;
     margin: 0 auto;
-    margin-top: -100%;
+    margin-top: -90%;
     img {
       max-width: 100%;
     }
   }
 }
 
+.fold_cont {
+  width: 90%;
+  margin: 0 auto;
+}
+.story_book_cont {
+  margin-left: 5%;
+  float: left;
+  width: 50%;
+  .story_page {
+    border: 1px solid gray;
+    padding: 3%;
+    font-family: Courier, Serif;
+    font-size: 0.8888888888888888em;
+  }
+}
+
+#footer {
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 90%;
+  .footer_element {
+    float: left;
+  }
+  #footer_typewriter {
+    width: 20%;
+  }
+  #footer_links {
+    width: 30%;
+  }
+  #bottom_logo {
+    width: 50%;
+  }
+}
 .clear {
   clear: both;
 }
+

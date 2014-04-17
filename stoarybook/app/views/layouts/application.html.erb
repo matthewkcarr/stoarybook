@@ -61,7 +61,29 @@
 	</div>
 
 	<div id="footer">
-		<img src="<%= image_path('theme/typewriter.png') %>" />
+    <div id="footer_typewriter" class="footer_element">
+      <img src="<%= image_path('theme/typewriter.png') %>" />
+    </div>
+    <div id="footer_links" class="footer_element">
+      <ul>
+        <li>
+          <a href="/">Contact</a>
+        </li>
+        <li>
+          <a href="/">Copyright</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+      </ul>
+    </div>
+    <div id="bottom_logo" class="footer_element">
+      <a href="/">
+        <img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+      </a> 
+    </div>
+		<div class="clear">
+		</div>
 	</div>
 </body>
 </html>
