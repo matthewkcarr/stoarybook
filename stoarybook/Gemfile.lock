@@ -156,7 +156,6 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   cancan
-  coffee-rails (~> 4.0.0)
   devise
   ember-rails
   jbuilder (~> 1.2)

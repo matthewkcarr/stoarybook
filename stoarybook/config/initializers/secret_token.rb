@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Stoarybook::Application.config.secret_key_base = 'd1f69fb36f3de43e68a7cd1abd7ed887513c0584a24b7c05e7613078c1ae9bbf62516ff790d3f023fcacdca434b3cabbee02bc0c8e6910072e8011df8de3849b'
+Stoarybook::Application.config.secret_key_base = ENV['ERD_SECRET_KEY_BASE']
