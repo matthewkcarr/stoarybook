@@ -26,3 +26,6 @@ Stoarybook.Book.FIXTURES = [
 		numberOfPages: 15
 	}
 ];
+Stoarybook.Book.FIXTURES.forEach( function(item) {
+	console.log(item);
+});
