@@ -18,8 +18,9 @@ Stoarybook.AuthController = Ember.ObjectController.extend({
         "user[password]": route.currentModel.password
 			},
       success: function(data) {
+					console.log("success with data from ajax request");
 					console.log("Login Msg #{data.user.dummy_msg}");
-					this.set('currentUser', data.user);
+					route.controller.set('currentUser', data.user);
 					route.transitionTo('about');
 			},
       error: function(jqXHR, textStatus, errorThrown) {
@@ -47,8 +48,7 @@ Stoarybook.AuthController = Ember.ObjectController.extend({
         "user[password_confirmation]": route.currentModel.password_confirmation
 			},
       success: function(data) {
-        Stoarybook.AuthController.set('currentUser', data.user);
-        Stoarybook.AuthController.set('currentUserTest', {id: 1, name: 'matttest'});
+        route.controller.set('currentUser', data.user);
         route.transitionTo('about');
 			},
       error: function(jqXHR, textStatus, errorThrown) {
