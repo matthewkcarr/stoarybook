@@ -24,7 +24,7 @@ Stoarybook.BooksRoute = Ember.Route.extend({
 });
 Stoarybook.BooksIndexRoute = Ember.Route.extend({
 	model: function() {
-		return this.modelFor('book');
+		return this.modelFor('books');
 	}
 });
 Stoarybook.BooksNewRoute = Ember.Route.extend({
