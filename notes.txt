@@ -30,3 +30,7 @@ http://pixabay.com/en/old-office-drawing-cartoon-free-28701/
 static ember site:
 code: https://github.com/cgcardona/ember_static
 breakdown: http://cgcardona.github.io/2013/02/12/build-a-static-site-with-emberjs/
+
+ember nested resource (no friendly urls):
+https://github.com/emberjs/data/pull/1078
+http://discuss.emberjs.com/t/i-was-being-silly-to-fight-ember-data-on-nested-urls-i-think/2082
