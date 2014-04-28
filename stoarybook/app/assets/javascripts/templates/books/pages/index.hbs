@@ -1,5 +1,15 @@
-<h1>BookPage</h1>
+<h1>Book Pages Index</h1>
 
-<p>Your content here.</p>
-
-{{outlet}}
+{{#each itemController="page"}}
+	<div class="page">
+		<div class="image">
+			this is the image
+		</div>
+		<div class="title">
+			text: {{!-- title --}}
+		</div>
+		<div class="author">
+			author: {{!-- author --}}
+		</div>
+	</div>
+{{/each}}

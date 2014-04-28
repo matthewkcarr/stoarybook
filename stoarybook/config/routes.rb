@@ -5,6 +5,10 @@ Stoarybook::Application.routes.draw do
   # You can have the root of your site routed with "root"
   #root 'devise/sessions#new'
 
+  resources 'books' do
+    resources 'pages'
+  end
+
   devise_for :users
   root 'about#index'
   #root 'devise/sessions#new'

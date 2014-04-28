@@ -22,11 +22,51 @@ Stoarybook.BooksRoute = Ember.Route.extend({
 		return this.store.find('book');
 	}
 });
+
+Stoarybook.PagesRoute.extend({
+	setupController: function(controller, model) {
+    this._super(controller, model);
+		controller.set('book', this.modelFor('book'));
+	},
+	model: function() {
+		var book = this.controllerFor('book');
+		return book.get('pages');
+	}
+});
+
 Stoarybook.BooksIndexRoute = Ember.Route.extend({
 	model: function() {
 		return this.modelFor('books');
 	}
 });
+
+Stoarybook.PagesIndexRoute.extend({
+	model: function() {
+		return this.modelFor('page');
+	}
+});
+
+Stoarybook.BookRoute.extend({
+  model: function(params) {
+    return this.store.find('book', params.book_id);
+  }
+  /*model: function(params) {
+    // the server returns `{ slug: 'foo-post' }`
+    return jQuery.getJSON("/posts/" + params.post_slug);
+  },
+
+  serialize: function(model) {
+    // this will make the URL `/posts/foo-post`
+    return { post_slug: model.get('slug') };
+  }*/
+});
+
+Stoarybook.PageRoute.extend({
+  model: function(params) {
+    return this.store.find('page', params.page_id);
+  }
+});
+
 Stoarybook.BooksNewRoute = Ember.Route.extend({
 	model: function() {
 		return this.store.find('book');
