@@ -1,4 +1,35 @@
 
+$pink: #e783f4;
+$purple: #6d5095;
+$green: #61a500;
+
+@font-face {
+    font-family: 'gothic_bold';
+    src: url('/assets/texgyreadventor-bold-webfont.eot');
+    src: url('/assets/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/texgyreadventor-bold-webfont.woff') format('woff'),
+         url('/assets/texgyreadventor-bold-webfont.ttf') format('truetype'),
+         url('/assets/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gothic';
+    src: url('/assets/texgyreadventor-regular-webfont.eot');
+    src: url('/assets/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('/assets/texgyreadventor-regular-webfont.ttf') format('truetype'),
+         url('/assets/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   background-color: white;
   color: black;
@@ -38,7 +69,7 @@ img {
     font-size: 0.75em;
     color: black;
     font-weight: bold;
-    font-family: Times,Serif;
+    font-family: 'gothic',Times,Serif;
 }
 
 #navigation {
@@ -49,6 +80,23 @@ img {
   ul li {
     margin-right: 3%;
     display: inline-block;
+
+    a.pink {
+      color:$pink;
+    }
+    a.purple {
+      color:$purple;
+    }
+    span.pink_circle:before {
+      content: ' \25CF';
+      font-size: 40px;
+      color:$pink;
+    }
+    span.purple_circle:before {
+      content: ' \25CF';
+      font-size: 40px;
+      color:$purple;
+    }
   }
 }
 #top_logo {
@@ -66,7 +114,7 @@ img {
 
   .bez_line {
 		margin-top: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $green;
     width: 35%;
     float: left;
   }

@@ -19,22 +19,28 @@
 	<div id="navigation" class="navigation_font">
 		<ul>
 			<li>
-				<%= link_to 'Sign In', '/users/sign_in' %>
+        <span class="pink_circle">&nbsp;</span>
+				<%= link_to 'Sign In', '/users/sign_in', :class => 'pink' %>
 			</li>
 			<li>
-				<%= link_to 'Sign Out', '/users/sign_out', :method => 'delete' %>
+        <span class="pink_circle">&nbsp;</span>
+				<%= link_to 'Sign Out', '/users/sign_out', :class => 'pink', :method => 'delete' %>
 			</li>
 			<li>
-				<%= link_to 'Manage a Book', '/' %>
+        <span class="purple_circle">&nbsp;</span>
+				<%= link_to 'Manage a Book', '/', :class => 'purple' %>
 			</li>
 			<li>
-				<%= link_to 'Browse Books', '/' %>
+        <span class="purple_circle">&nbsp;</span>
+				<%= link_to 'Browse Books', '/', :class => 'purple' %>
 			</li>
 			<li>
-				<%= link_to 'Upload a Photo', '/' %>
+        <span class="pink_circle">&nbsp;</span>
+				<%= link_to 'Upload a Photo', '/', :class => 'pink' %>
 			</li>
 			<li>
-				<%= link_to 'Browse Photos', '/' %>
+        <span class="pink_circle">&nbsp;</span>
+				<%= link_to 'Browse Photos', '/', :class => 'pink' %>
 			</li>
 		</ul>
 	</div>
