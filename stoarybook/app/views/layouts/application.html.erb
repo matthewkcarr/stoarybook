@@ -1,12 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Stoarybook: Collaboratively create picture books</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
-  <body>
-    <%= yield %>
-  </body>
+<head>
+  <title>Stoarybook</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="body_content">
+
+	<div id="top_logo">
+		<a href="/">
+			<img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+		</a> 
+	</div>
+
+	<div id="navigation" class="navigation_font">
+		<ul>
+			<li>
+				<%= link_to 'Sign In', '/users/sign_in' %>
+			</li>
+			<li>
+				<%= link_to 'Sign Out', '/users/sign_out', :method => 'delete' %>
+			</li>
+			<li>
+				<%= link_to 'Manage a Book', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Browse Books', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Upload a Photo', '/' %>
+			</li>
+			<li>
+				<%= link_to 'Browse Photos', '/' %>
+			</li>
+		</ul>
+	</div>
+
+	<div class="clear">
+	</div>
+
+	<div id="nav_sep">
+		<div class="bez_line">
+		</div>
+		<div class="bezier">
+			<img src="<%= image_path('theme/nav_bezier.png') %>" />
+		</div>
+		<div class="bez_line">
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+
+	<div id="page_content">
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+		<%= yield %>
+	</div>
+
+	<div id="footer">
+    <div id="footer_typewriter" class="footer_element">
+      <img src="<%= image_path('theme/typewriter.png') %>" />
+    </div>
+    <div id="footer_links" class="footer_element navigation_font">
+      <ul>
+        <li>
+          <a href="/">Contact</a>
+        </li>
+        <li>
+          <a href="/">Copyright</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+      </ul>
+    </div>
+    <div id="bottom_logo" class="footer_element">
+      <a href="/">
+        <img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+      </a> 
+    </div>
+		<div class="clear">
+		</div>
+	</div>
+</body>
 </html>

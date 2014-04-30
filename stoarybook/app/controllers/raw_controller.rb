@@ -1,0 +1,2 @@
+class RawController < ApplicationController
+end
