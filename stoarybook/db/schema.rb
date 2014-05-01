@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140430212451) do
+ActiveRecord::Schema.define(version: 20140501204546) do
+
+  create_table "book_photos", force: true do |t|
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+  end
+
+  create_table "book_photos_pages", force: true do |t|
+    t.integer "book_photo_id"
+    t.integer "page_id"
+  end
 
   create_table "books", force: true do |t|
     t.string   "title"

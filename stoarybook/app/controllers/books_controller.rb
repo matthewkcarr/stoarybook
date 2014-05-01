@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
 
-  before_filter :find_author
+  before_action :authenticate_user!, :only => [:new, :create, :update, :edit, :destroy]
+  before_filter :find_author, :except => [:new]
 
   def index
     @books = @author.books
@@ -12,7 +13,7 @@ class BooksController < ApplicationController
   end
 
   def new
-    @book = Book.new(:author => current_user)
+    @book = Book.new
   end
 
   def create

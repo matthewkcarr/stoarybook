@@ -8,6 +8,7 @@ Stoarybook::Application.routes.draw do
 
   resources 'books' do
     resources 'pages'
+    get 'browse' => 'books#browse', as: :browse, on: :collection
   end
 
   devise_for :users

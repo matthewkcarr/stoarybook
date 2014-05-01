@@ -18,21 +18,31 @@
 
 	<div id="navigation" class="navigation_font">
 		<ul>
+    <% if user_signed_in? %>
 			<li>
         <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Sign In', '/users/sign_in', :class => 'pink' %>
+				<%= link_to 'Sign Out', destroy_user_session_path, :class => 'pink', :method => 'delete' %>
 			</li>
+    <% else %>
 			<li>
         <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Sign Out', '/users/sign_out', :class => 'pink', :method => 'delete' %>
+				<%= link_to 'Sign In', new_user_session_path, :class => 'pink' %>
 			</li>
+    <% end %>
+    <% if user_signed_in? %>
 			<li>
         <span class="purple_circle">&nbsp;</span>
-				<%= link_to 'Manage a Book', '/', :class => 'purple' %>
+				<%= link_to 'Manage a Book', user_books_path(current_user), :class => 'purple' %>
 			</li>
+    <% else %>
 			<li>
         <span class="purple_circle">&nbsp;</span>
-				<%= link_to 'Browse Books', '/', :class => 'purple' %>
+				<%= link_to 'Create a Book', new_book_path, :class => 'purple' %>
+			</li>
+    <% end %>
+			<li>
+        <span class="purple_circle">&nbsp;</span>
+				<%= link_to 'Browse Books', browse_books_path, :class => 'purple' %>
 			</li>
 			<li>
         <span class="pink_circle">&nbsp;</span>
