@@ -6,6 +6,13 @@ Stoarybook::Application.routes.draw do
   #root 'devise/sessions#new'
 
 
+  #resources :bulk_photos
+  get 'bulk_photos' => 'bulk_photos#index', :as => :bulk_photos
+  post 'bulk_photos' => 'bulk_photos#create'
+  get 'bulk_photos/:id' => 'bulk_photos#show', :as => :bulk_photo
+
+  resources :book_photos
+
   resources 'books' do
     resources 'pages'
     get 'browse' => 'books#browse', as: :browse, on: :collection

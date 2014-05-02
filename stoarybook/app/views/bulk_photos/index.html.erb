@@ -1,0 +1,8 @@
+
+<% for photo in @photos %>
+  <div class="photo">
+    <img src="<%= photo.picture.url(:small) %>">
+  </div>
+<% end %>
+
+<%= render :template => '/bulk_photos/new' %>
