@@ -9,11 +9,27 @@ class BulkPhotosController < ApplicationController
   end
 
   def create
-    @book_photo = BookPhoto.new( params.require(:book_photo).permit(:picture) )
-    if @book_photo.save
-      redirect_to :action => :index
+    if BookPhoto.create( photo_params )
+      respond_to do |format|
+        format.html {
+          redirect_to :action => :index
+        }
+        format.json { render :status => :created, :template => nil}
+      end
     else
-      render 'new'
+      respond_to do |format|
+        format.html {
+          render :template => :new
+        }
+        format.json { render :status => :unprocessable_entity, :template => nil}
+      end
     end
   end
+
+  private
+  def photo_params
+    #params[:book_photo][:picture] ||= []
+    params.require(:book_photo).permit(:picture, :picture => [])
+  end
+
 end
