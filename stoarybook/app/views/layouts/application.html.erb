@@ -12,62 +12,61 @@
 
 	<div id="top_logo">
 		<a href="/">
-			<img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+			<img src="<%= image_path('theme/logo.png') %>" />
 		</a> 
 	</div>
 
 	<div id="navigation" class="navigation_font">
-		<ul>
+		<ul class="nav">
     <% if user_signed_in? %>
 			<li>
+        <a href="<%= destroy_user_session_path %>" method="delete" class="pink">
         <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Sign Out', destroy_user_session_path, :class => 'pink', :method => 'delete' %>
+				Sign Out</a>
 			</li>
     <% else %>
 			<li>
+        <a href="<%= new_user_session_path %>" class="pink">
         <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Sign In', new_user_session_path, :class => 'pink' %>
+				Sign In</a>
 			</li>
     <% end %>
     <% if user_signed_in? %>
 			<li>
-        <span class="purple_circle">&nbsp;</span>
-				<%= link_to 'Manage a Book', user_books_path(current_user), :class => 'purple' %>
+        <a href="<%= user_books_path(current_user) %>" class="pink">
+        <span class="pink_circle">&nbsp;</span>
+				Manage a Book</a>
 			</li>
     <% else %>
 			<li>
-        <span class="purple_circle">&nbsp;</span>
-				<%= link_to 'Create a Book', new_book_path, :class => 'purple' %>
+        <a href="<%= new_book_path %>" class="pink">
+        <span class="pink_circle">&nbsp;</span>
+				Create a Book</a>
 			</li>
     <% end %>
+    </ul>
+    <ul class="nav">
 			<li>
+        <a href="<%= bulk_photos_path %>" class="purple">
         <span class="purple_circle">&nbsp;</span>
-				<%= link_to 'Browse Books', browse_books_path, :class => 'purple' %>
+				Browse Books</a>
 			</li>
 			<li>
-        <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Upload a Photo', bulk_photos_path, :class => 'pink' %>
+        <a href="<%= bulk_photos_path %>" class="purple">
+        <span class="purple_circle">&nbsp;</span>
+				Upload a Photo</a>
 			</li>
+    </ul>
+    <ul class="nav">
 			<li>
+        <a href="/" class="pink">
         <span class="pink_circle">&nbsp;</span>
-				<%= link_to 'Browse Photos', '/', :class => 'pink' %>
+				Browse Photos</a>
 			</li>
 		</ul>
 	</div>
 
 	<div class="clear">
-	</div>
-
-	<div id="nav_sep">
-		<div class="bez_line">
-		</div>
-		<div class="bezier">
-			<img src="<%= image_path('theme/nav_bezier.png') %>" />
-		</div>
-		<div class="bez_line">
-		</div>
-		<div class="clear">
-		</div>
 	</div>
 
 	<div id="page_content">
@@ -95,7 +94,7 @@
     </div>
     <div id="bottom_logo" class="footer_element">
       <a href="/">
-        <img src="<%= image_path('theme/stoarybook_logo.png') %>" />
+        <img src="<%= image_path('theme/logo.png') %>" />
       </a> 
     </div>
 		<div class="clear">

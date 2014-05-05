@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background-image: url( ' <%= image_path("theme/typewriter_dots.png") %>');
+  background-image: url( ' <%= image_path("theme/typewriter_dots2.png") %>');
   width: 100%;
 }
 h1 {
@@ -60,7 +60,7 @@ img {
 }
 #body_content {
   margin: 0 auto;
-	width: 90%;
+	width: 92%;
   background-color:white;
   padding: 2%;
 }
@@ -75,11 +75,14 @@ img {
 #navigation {
 	float: right;
 	width: 55%;
+  padding: 2% 0 0 4%;
   ul {
+    display: inline-block;
+    width: 33%;
   }
   ul li {
-    margin-right: 3%;
     display: inline-block;
+    line-height: 0.7em;
 
     a.pink {
       color:$pink;
@@ -87,15 +90,27 @@ img {
     a.purple {
       color:$purple;
     }
+    a.purple:hover {
+      color: $green;
+      text-decoration: none;
+    }
+    a.pink:hover{
+      color: $green;
+      text-decoration: none;
+    }
     span.pink_circle:before {
       content: ' \25CF';
-      font-size: 40px;
+      font-size: 4em;
       color:$pink;
     }
     span.purple_circle:before {
       content: ' \25CF';
-      font-size: 40px;
+      font-size: 4em;
       color:$purple;
+    }
+    a.purple:hover span.purple_circle:before,
+    a.pink:hover span.pink_circle:before {
+      color:$green;
     }
   }
 }
